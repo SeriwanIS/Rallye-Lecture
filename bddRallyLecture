@@ -1,7 +1,8 @@
-DROP DATABASE IF EXISTS bddRallyLecture;
-CREATE DATABASE bddRallyLecture;
+DROP DATABASE IF EXISTS bddRallyeLecture;
+CREATE DATABASE bddRallyeLecture;
+USE bddRallyeLecture;
 
-DROP TABLE IF EXISTS Editeur;
+DROP TABLE IF EXISTS editeur;
 /*SUPPRESSION DE LA TABLE Editeur SI ELLE EXISTE*/
 CREATE TABLE editeur (
 	id int NOT NULL AUTO_INCREMENT,
@@ -17,14 +18,15 @@ CREATE TABLE auteur (
 	PRIMARY KEY (id)
 	)ENGINE=INNODB;
 
-DROP TABLE IF EXISTS Livre;
+DROP TABLE IF EXISTS livre;
 /*SUPPRESSION DE LA TABLE Livre SI ELLE EXISTE*/
 CREATE TABLE livre (
 	id int NOT NULL AUTO_INCREMENT,
 	titre VARCHAR(45),
 	couverture VARCHAR(100),
-	idAuteur int ,
-	idEditeur int,
+	idAuteur int NOT NULL,
+	idEditeur int NOT NULL,
+	idLivre int NOT NULL,
 	PRIMARY KEY (id),
 	FOREIGN KEY (idAuteur) REFERENCES Auteur(id),
 	FOREIGN KEY (idEditeur) REFERENCES Editeur(id)
@@ -80,9 +82,7 @@ CREATE TABLE reponse (
 	idParticiperRally int NOT NULL,
 	idParticiperEleve int NOT NULL,
 	idQuestion int NOT NULL,
-	idProposition int NOT NULL,
-	FOREIGN KEY (idQuestion) REFERENCES Question(id),
-	FOREIGN KEY (idProposition) REFERENCES Proposition(id)
+	idProposition int NOT NULL
 	)ENGINE=INNODB;
 
 
@@ -320,7 +320,13 @@ CREATE TABLE IF NOT EXISTS `aauth_login_attempts` (
 -- ----------------------------
 
 
-alter table reponse 
-add constraint pk_reponse primary key (idParticiperEleve, idParticiperRally),
+alter table comporter
+add constraint pk_comporter primary key (idLivre, idRallye);
 
+alter table participer
+add constraint pk_participer primary key (idEleve, idRallye);
+
+alter table reponse
+add constraint pk_reponse primary key (idQuestion, idProposition, idParticiperRally, idParticiperEleve);
+add constraint fk_reponse_idParticiperRally foreign key (idParticiperEleve, idParticiperRally) references participer (idEleve, idRallye); 
 
