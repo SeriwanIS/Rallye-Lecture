@@ -1,4 +1,4 @@
-## Rallye Lecture PHP
+## Rallye Lecture C#
 
 Ce projet réalisé en C# à l'aide de MySql (afin d'accéder à la BDD) permet aux enseignant d'une base de données d'administrer un site relatif à un rallyeLecture et aux élèves d'y participer.
 
