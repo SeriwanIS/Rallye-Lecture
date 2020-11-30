@@ -1,14 +1,21 @@
 ## Rallye Lecture C#
 
-Ce projet réalisé en C# à et l'aide de MySql (afin d'accéder à la BDD) permet aux enseignants d'administrer un site et une BDD relatif à un rallyeLecture 
-Permet aussi aux élèves d'y participer.
+Le but du projet est de réaliser une application Windows Form en C# permettant à un professeur d'alimenter une BDD avec le contenu d'un fichier csv. Ce contient une liste d'élève (nom et prénom). Après avoir lancé l'intégration, des identifiants et des mots de passes sont crées.
 
 Le projet se divise en 3 parties :
 
-* Gestion des utilisateurs.
-* Gestion des Mots De Passes
-* Gestion des Livres
-* Quizz sur les livres.
+* Lecture des informations d'un fichier csv.
+* Ecriture d'un fichier csv avec les informations de connection de chaques eleves.
+* Alimentation d'une base de données.
+
+Les outils utilisés sont :
+
+* Git
+* Visual Studio
+* C#
+* Windows Form
+
+## Cas D'utilisation : //A INTEGRER
 
 ## Application WindowForm
 
@@ -16,14 +23,10 @@ L'utilisateur à la possibilité d'ajouter un fichier .CSV contenant une liste d
 Il devra renseigner la Classe  et l'année scolaire en cours.
 Enfin l'utilisateur devra renseigner le Type de mot de passe (Aléatoire ou Constuit).
 
+
 CAPTURE A AJOUTER 
 
-## LE SITE
 
-La connexion au site est nécessaire afin d'accéder au contenu.
-
-
-
-### Diagramme du site
+### Schéma de la BDD
 
 CAPTURE A AJOUTER
