@@ -33,4 +33,4 @@ CAPTURE A AJOUTER
 
 ### Table Liée aux autorisations : 
 
-![BDDAauth](https://image.noelshack.com/fichiers/2020/49/1/1606767722-schemadbrallyelecture.png)
+![BDDAauth](https://image.noelshack.com/fichiers/2020/49/1/1606768029-schemadbaauth.png)
