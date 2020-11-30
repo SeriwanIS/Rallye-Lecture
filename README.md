@@ -29,4 +29,4 @@ CAPTURE A AJOUTER
 
 ### Schéma de la BDD
 
-CAPTURE A AJOUTER
+![BDD](https://image.noelshack.com/fichiers/2020/49/1/1606767722-schemadbrallyelecture.png)
