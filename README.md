@@ -30,3 +30,7 @@ CAPTURE A AJOUTER
 ### Schéma de la BDD
 
 ![BDD](https://image.noelshack.com/fichiers/2020/49/1/1606767722-schemadbrallyelecture.png)
+
+### Table Liée aux autorisations : 
+
+![BDDAauth](https://image.noelshack.com/fichiers/2020/49/1/1606767722-schemadbrallyelecture.png)
