@@ -24,7 +24,7 @@ Il devra renseigner la Classe  et l'année scolaire en cours.
 Enfin l'utilisateur devra renseigner le Type de mot de passe (Aléatoire ou Constuit).
 
 
-CAPTURE A AJOUTER 
+![app](https://image.noelshack.com/fichiers/2020/49/2/1606809576-ppewf.png)
 
 
 ### Schéma de la BDD : 
