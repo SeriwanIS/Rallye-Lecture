@@ -15,7 +15,9 @@ Les outils utilisés sont :
 * C#
 * Windows Form
 
-## Cas D'utilisation : //A INTEGRER
+## Cas D'utilisation : 
+
+![caqsutilisation](https://image.noelshack.com/fichiers/2020/49/3/1606917017-image1.png)
 
 ## Application WindowForm
 
